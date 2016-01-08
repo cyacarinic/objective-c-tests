@@ -16,6 +16,7 @@
 		40A72C061C3F1A3400BD7FC6 /* SlideOutMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C051C3F1A3400BD7FC6 /* SlideOutMenuTests.m */; };
 		40A72C111C3F1A3400BD7FC6 /* SlideOutMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C101C3F1A3400BD7FC6 /* SlideOutMenuUITests.m */; };
 		40A72C221C3F1DCE00BD7FC6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C211C3F1DCE00BD7FC6 /* SWRevealViewController.m */; };
+		40A72C251C3F26B800BD7FC6 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C241C3F26B800BD7FC6 /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		40A72C121C3F1A3400BD7FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A72C201C3F1DCE00BD7FC6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../SlideOutMenuFiles/SWRevealViewController.h; sourceTree = "<group>"; };
 		40A72C211C3F1DCE00BD7FC6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../SlideOutMenuFiles/SWRevealViewController.m; sourceTree = "<group>"; };
+		40A72C231C3F26B800BD7FC6 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		40A72C241C3F26B800BD7FC6 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				40A72BEF1C3F1A3400BD7FC6 /* AppDelegate.m */,
 				40A72BF11C3F1A3400BD7FC6 /* ViewController.h */,
 				40A72BF21C3F1A3400BD7FC6 /* ViewController.m */,
+				40A72C231C3F26B800BD7FC6 /* NavigationViewController.h */,
+				40A72C241C3F26B800BD7FC6 /* NavigationViewController.m */,
 				40A72BF41C3F1A3400BD7FC6 /* Main.storyboard */,
 				40A72BF71C3F1A3400BD7FC6 /* Assets.xcassets */,
 				40A72BF91C3F1A3400BD7FC6 /* LaunchScreen.storyboard */,
@@ -277,6 +282,7 @@
 			files = (
 				40A72BF31C3F1A3400BD7FC6 /* ViewController.m in Sources */,
 				40A72BF01C3F1A3400BD7FC6 /* AppDelegate.m in Sources */,
+				40A72C251C3F26B800BD7FC6 /* NavigationViewController.m in Sources */,
 				40A72BED1C3F1A3400BD7FC6 /* main.m in Sources */,
 				40A72C221C3F1DCE00BD7FC6 /* SWRevealViewController.m in Sources */,
 			);

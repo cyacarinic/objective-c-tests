@@ -28,22 +28,77 @@
             </objects>
             <point key="canvasLocation" x="-165" y="191"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="Hxt-GS-YR6">
             <objects>
-                <tableViewController id="1hw-Cz-NzT" sceneMemberID="viewController">
+                <tableViewController id="1hw-Cz-NzT" customClass="NavigationViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sts-zd-Fon">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33052587988267706" green="0.33087480033926198" blue="0.36074525523560208" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Cqe-0I-v50">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="first" textLabel="2MV-KH-8kP" style="IBUITableViewCellStyleDefault" id="Ct8-no-iMc">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cqe-0I-v50" id="feW-5E-vGl">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ct8-no-iMc" id="4mG-uc-oVD">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2MV-KH-8kP">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="Fgk-4s-yh7" kind="custom" customClass="SWRevealViewControllerSegue" id="W0o-wz-zaO"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="second" textLabel="EF4-is-5UM" style="IBUITableViewCellStyleDefault" id="eK2-c6-nBL">
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eK2-c6-nBL" id="hG4-Ds-kyp">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Juan Perez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EF4-is-5UM">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="GcZ-Rs-BTh" kind="custom" customClass="SWRevealViewControllerSegue" id="7l1-OT-Erg"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tercero" textLabel="ijc-j0-5HW" style="IBUITableViewCellStyleDefault" id="uyF-tj-9te">
+                                <rect key="frame" x="0.0" y="116" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uyF-tj-9te" id="USQ-2j-9AJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mapa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ijc-j0-5HW">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="9Ll-WM-2W9" kind="custom" customClass="SWRevealViewControllerSegue" id="ldH-sc-Fgm"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -99,5 +154,58 @@
             </objects>
             <point key="canvasLocation" x="907" y="563"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="AVB-WT-A4m">
+            <objects>
+                <viewController id="GcZ-Rs-BTh" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dkf-cc-csk"/>
+                        <viewControllerLayoutGuide type="bottom" id="lTT-sn-gzE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UrE-aX-cy3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AO8-dT-wUU">
+                        <barButtonItem key="leftBarButtonItem" title="Ver mas..." id="CXA-Ze-Nel"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="barButton" destination="CXA-Ze-Nel" id="n2y-ET-FN0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOI-kH-5la" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="-159"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X6q-4j-IGs">
+            <objects>
+                <viewController id="Fgk-4s-yh7" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QCv-Cf-GZq"/>
+                        <viewControllerLayoutGuide type="bottom" id="IXl-Va-H85"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6yb-Ab-XBF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LVt-Zc-EpM">
+                        <barButtonItem key="leftBarButtonItem" title="Ver mas..." id="4lS-1Z-UaY"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="barButton" destination="4lS-1Z-UaY" id="iRt-9W-HZv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQC-Ei-BHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="-853"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ldH-sc-Fgm"/>
+    </inferredMetricsTieBreakers>
 </document>
