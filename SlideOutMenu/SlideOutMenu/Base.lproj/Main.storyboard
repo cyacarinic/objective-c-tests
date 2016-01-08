@@ -55,7 +55,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="Fgk-4s-yh7" kind="custom" customClass="SWRevealViewControllerSegue" id="W0o-wz-zaO"/>
+                                    <segue destination="9Ll-WM-2W9" kind="custom" customClass="SWRevealViewControllerSegue" id="BmD-xP-1SW"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="second" textLabel="EF4-is-5UM" style="IBUITableViewCellStyleDefault" id="eK2-c6-nBL">
@@ -76,7 +76,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="GcZ-Rs-BTh" kind="custom" customClass="SWRevealViewControllerSegue" id="7l1-OT-Erg"/>
+                                    <segue destination="GcZ-Rs-BTh" kind="custom" customClass="SWRevealViewControllerSegue" id="JyS-HF-KOr"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tercero" textLabel="ijc-j0-5HW" style="IBUITableViewCellStyleDefault" id="uyF-tj-9te">
@@ -97,7 +97,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="9Ll-WM-2W9" kind="custom" customClass="SWRevealViewControllerSegue" id="ldH-sc-Fgm"/>
+                                    <segue destination="Fgk-4s-yh7" kind="custom" customClass="SWRevealViewControllerSegue" id="qLv-GB-4GX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -140,6 +140,14 @@
                     <view key="view" contentMode="scaleToFill" id="Tnp-iI-zGe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vista de Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-P3-opy">
+                                <rect key="frame" x="81" y="273" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dn4-V6-mDa">
@@ -165,6 +173,14 @@
                     <view key="view" contentMode="scaleToFill" id="UrE-aX-cy3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vista de Juan Perez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5Q-ro-VBY">
+                                <rect key="frame" x="85" y="273" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="AO8-dT-wUU">
@@ -190,6 +206,14 @@
                     <view key="view" contentMode="scaleToFill" id="6yb-Ab-XBF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vista del Mapita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbu-0L-ja6">
+                                <rect key="frame" x="99" y="273" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="LVt-Zc-EpM">
@@ -206,6 +230,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ldH-sc-Fgm"/>
+        <segue reference="BmD-xP-1SW"/>
     </inferredMetricsTieBreakers>
 </document>
