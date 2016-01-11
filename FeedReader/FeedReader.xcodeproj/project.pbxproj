@@ -15,6 +15,7 @@
 		40A72C4D1C402C8800BD7FC6 /* FeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C4C1C402C8800BD7FC6 /* FeedReaderTests.m */; };
 		40A72C581C402C8800BD7FC6 /* FeedReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C571C402C8800BD7FC6 /* FeedReaderUITests.m */; };
 		40A72C671C402F3700BD7FC6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C661C402F3700BD7FC6 /* TableViewController.m */; };
+		40A72C701C4067A100BD7FC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A72C6F1C4067A100BD7FC6 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		40A72C591C402C8800BD7FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A72C651C402F3700BD7FC6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		40A72C661C402F3700BD7FC6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		40A72C6E1C4067A100BD7FC6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40A72C6F1C4067A100BD7FC6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +104,13 @@
 		40A72C311C402C8700BD7FC6 /* FeedReader */ = {
 			isa = PBXGroup;
 			children = (
+				40A72C3B1C402C8700BD7FC6 /* Main.storyboard */,
 				40A72C651C402F3700BD7FC6 /* TableViewController.h */,
 				40A72C661C402F3700BD7FC6 /* TableViewController.m */,
+				40A72C6E1C4067A100BD7FC6 /* ViewController.h */,
+				40A72C6F1C4067A100BD7FC6 /* ViewController.m */,
 				40A72C351C402C8700BD7FC6 /* AppDelegate.h */,
 				40A72C361C402C8700BD7FC6 /* AppDelegate.m */,
-				40A72C3B1C402C8700BD7FC6 /* Main.storyboard */,
 				40A72C3E1C402C8700BD7FC6 /* Assets.xcassets */,
 				40A72C401C402C8800BD7FC6 /* LaunchScreen.storyboard */,
 				40A72C431C402C8800BD7FC6 /* Info.plist */,
@@ -272,6 +277,7 @@
 			files = (
 				40A72C371C402C8700BD7FC6 /* AppDelegate.m in Sources */,
 				40A72C671C402F3700BD7FC6 /* TableViewController.m in Sources */,
+				40A72C701C4067A100BD7FC6 /* ViewController.m in Sources */,
 				40A72C341C402C8700BD7FC6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

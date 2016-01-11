@@ -47,6 +47,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4mY-up-CP5" kind="show" identifier="showDetail" id="xad-sk-TFp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -59,7 +62,77 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYi-UZ-3N9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="221"/>
+            <point key="canvasLocation" x="-140" y="221"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="foK-wi-D6K">
+            <objects>
+                <viewController id="4mY-up-CP5" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y9R-on-EhJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCD-Zv-kui"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k23-2a-MeN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pci-4R-fbS">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="7W2-zL-tZa">
+                                        <connections>
+                                            <action selector="goBack" destination="BGl-WN-w3Q" id="ZL4-Jk-Afg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="NQD-Jd-vTO">
+                                        <connections>
+                                            <action selector="goForward" destination="BGl-WN-w3Q" id="QlL-ds-nFt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1cb-Ol-tM5"/>
+                                    <barButtonItem systemItem="stop" id="0R2-Yi-vwv">
+                                        <connections>
+                                            <action selector="stopLoading" destination="BGl-WN-w3Q" id="mFB-ef-Lif"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="E72-T1-hcb">
+                                        <connections>
+                                            <action selector="reload" destination="BGl-WN-w3Q" id="AoP-Pb-5ab"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGl-WN-w3Q">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="b9w-80-Kgg">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.038836428917506716" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BGl-WN-w3Q" firstAttribute="leading" secondItem="pci-4R-fbS" secondAttribute="leading" id="4FA-Yr-8ln"/>
+                            <constraint firstItem="BGl-WN-w3Q" firstAttribute="top" secondItem="y9R-on-EhJ" secondAttribute="bottom" id="DkF-to-8VH"/>
+                            <constraint firstItem="pci-4R-fbS" firstAttribute="top" secondItem="BGl-WN-w3Q" secondAttribute="bottom" id="Glz-mW-niL"/>
+                            <constraint firstItem="b9w-80-Kgg" firstAttribute="centerX" secondItem="pci-4R-fbS" secondAttribute="centerX" id="JTn-XP-OoB"/>
+                            <constraint firstAttribute="trailing" secondItem="pci-4R-fbS" secondAttribute="trailing" id="Mcx-p9-Lq8"/>
+                            <constraint firstItem="pci-4R-fbS" firstAttribute="leading" secondItem="k23-2a-MeN" secondAttribute="leading" id="ZB2-XQ-FGr"/>
+                            <constraint firstItem="pci-4R-fbS" firstAttribute="bottom" secondItem="kCD-Zv-kui" secondAttribute="top" id="e6T-Rd-0sl"/>
+                            <constraint firstItem="b9w-80-Kgg" firstAttribute="centerY" secondItem="k23-2a-MeN" secondAttribute="centerY" id="gH6-EZ-hU2"/>
+                            <constraint firstItem="BGl-WN-w3Q" firstAttribute="trailing" secondItem="pci-4R-fbS" secondAttribute="trailing" id="zkh-4u-htF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ActInd" destination="b9w-80-Kgg" id="2Lz-zX-cGK"/>
+                        <outlet property="webView" destination="BGl-WN-w3Q" id="R6E-N2-YjH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKa-uf-ewc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="221"/>
         </scene>
     </scenes>
 </document>

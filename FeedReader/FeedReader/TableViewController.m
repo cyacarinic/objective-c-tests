@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "ViewController.h"
 
 @interface TableViewController () {
     NSXMLParser *parser;
@@ -93,4 +94,34 @@
 }
 
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if([[segue identifier] isEqualToString:@"showDetail"]){
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *string = [feeds[indexPath.row] objectForKey:@"link"];
+        [[segue destinationViewController] setUrl:string];
+    }
+    
+    
+    
+}
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
