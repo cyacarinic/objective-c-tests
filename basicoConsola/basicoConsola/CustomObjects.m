@@ -1,5 +1,5 @@
 //
-//  main.m
+//  CustomObjects.m
 //  basicoConsola
 //
 //  Created by Claudio Yacarini on 25/01/16.
@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[]){
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Hola mundo");
     }
     return 0;
 }
