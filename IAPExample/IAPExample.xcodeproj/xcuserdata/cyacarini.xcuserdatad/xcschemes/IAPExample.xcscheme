@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "405307681C56C2C500BFCA0D"
+               BlueprintIdentifier = "4053081A1C581EC800BFCA0D"
                BuildableName = "IAPExample.app"
                BlueprintName = "IAPExample"
                ReferencedContainer = "container:IAPExample.xcodeproj">
@@ -28,31 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "405307811C56C2C500BFCA0D"
-               BuildableName = "IAPExampleTests.xctest"
-               BlueprintName = "IAPExampleTests"
-               ReferencedContainer = "container:IAPExample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4053078C1C56C2C500BFCA0D"
-               BuildableName = "IAPExampleUITests.xctest"
-               BlueprintName = "IAPExampleUITests"
-               ReferencedContainer = "container:IAPExample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "405307681C56C2C500BFCA0D"
+            BlueprintIdentifier = "4053081A1C581EC800BFCA0D"
             BuildableName = "IAPExample.app"
             BlueprintName = "IAPExample"
             ReferencedContainer = "container:IAPExample.xcodeproj">
@@ -75,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "405307681C56C2C500BFCA0D"
+            BlueprintIdentifier = "4053081A1C581EC800BFCA0D"
             BuildableName = "IAPExample.app"
             BlueprintName = "IAPExample"
             ReferencedContainer = "container:IAPExample.xcodeproj">
@@ -94,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "405307681C56C2C500BFCA0D"
+            BlueprintIdentifier = "4053081A1C581EC800BFCA0D"
             BuildableName = "IAPExample.app"
             BlueprintName = "IAPExample"
             ReferencedContainer = "container:IAPExample.xcodeproj">
