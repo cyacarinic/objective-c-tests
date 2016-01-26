@@ -10,6 +10,9 @@
 		405307AC1C56C5CE00BFCA0D /* Cadenas.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307AB1C56C5CE00BFCA0D /* Cadenas.m */; };
 		405307B61C56D97E00BFCA0D /* Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307B51C56D97E00BFCA0D /* Arrays.m */; };
 		405307B81C56DDF700BFCA0D /* CustomObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307B71C56DDF700BFCA0D /* CustomObjects.m */; };
+		405307BF1C56E02E00BFCA0D /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307BE1C56E02E00BFCA0D /* Animal.m */; };
+		405307C41C57E93B00BFCA0D /* Koala.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307C31C57E93B00BFCA0D /* Koala.m */; };
+		405307C71C57EBD700BFCA0D /* Animal+Exam.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307C61C57EBD700BFCA0D /* Animal+Exam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,12 @@
 		405307AB1C56C5CE00BFCA0D /* Cadenas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cadenas.m; sourceTree = "<group>"; };
 		405307B51C56D97E00BFCA0D /* Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrays.m; sourceTree = "<group>"; };
 		405307B71C56DDF700BFCA0D /* CustomObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObjects.m; sourceTree = "<group>"; };
+		405307BD1C56E02E00BFCA0D /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		405307BE1C56E02E00BFCA0D /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		405307C21C57E93B00BFCA0D /* Koala.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Koala.h; sourceTree = "<group>"; };
+		405307C31C57E93B00BFCA0D /* Koala.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Koala.m; sourceTree = "<group>"; };
+		405307C51C57EBD700BFCA0D /* Animal+Exam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Animal+Exam.h"; sourceTree = "<group>"; };
+		405307C61C57EBD700BFCA0D /* Animal+Exam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Animal+Exam.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +73,12 @@
 				405307AB1C56C5CE00BFCA0D /* Cadenas.m */,
 				405307B51C56D97E00BFCA0D /* Arrays.m */,
 				405307B71C56DDF700BFCA0D /* CustomObjects.m */,
+				405307BD1C56E02E00BFCA0D /* Animal.h */,
+				405307BE1C56E02E00BFCA0D /* Animal.m */,
+				405307C21C57E93B00BFCA0D /* Koala.h */,
+				405307C31C57E93B00BFCA0D /* Koala.m */,
+				405307C51C57EBD700BFCA0D /* Animal+Exam.h */,
+				405307C61C57EBD700BFCA0D /* Animal+Exam.m */,
 			);
 			path = basicoConsola;
 			sourceTree = "<group>";
@@ -125,7 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				405307AC1C56C5CE00BFCA0D /* Cadenas.m in Sources */,
+				405307BF1C56E02E00BFCA0D /* Animal.m in Sources */,
 				405307B61C56D97E00BFCA0D /* Arrays.m in Sources */,
+				405307C41C57E93B00BFCA0D /* Koala.m in Sources */,
+				405307C71C57EBD700BFCA0D /* Animal+Exam.m in Sources */,
 				405307B81C56DDF700BFCA0D /* CustomObjects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

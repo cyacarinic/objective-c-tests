@@ -5,6 +5,7 @@
 //  Created by Claudio Yacarini on 25/01/16.
 //  Copyright © 2016 Claudio Yacarini. All rights reserved.
 //
+//  ---> OBJECTIVE C CLASS --> FILE TYPE :: EMPTY FILE
 
 #import <Foundation/Foundation.h>
 
