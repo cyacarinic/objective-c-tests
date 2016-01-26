@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <StoreKit/StoreKit.h>
+#import "PurchasedViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet UILabel *label;
+}
+- (IBAction)purchaseItem:(id)sender;
 
+@property (strong, nonatomic) PurchasedViewController *purchaseController;
+-(void) purchased;
 
 @end
 

@@ -14,6 +14,8 @@
 		4053082C1C581EC800BFCA0D /* IAPExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4053082A1C581EC800BFCA0D /* IAPExample.xcdatamodeld */; };
 		4053082E1C581EC800BFCA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4053082D1C581EC800BFCA0D /* Assets.xcassets */; };
 		405308311C581EC800BFCA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4053082F1C581EC800BFCA0D /* LaunchScreen.storyboard */; };
+		405308391C5824C400BFCA0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405308381C5824C400BFCA0D /* StoreKit.framework */; };
+		4053083D1C5826E900BFCA0D /* PurchasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4053083C1C5826E900BFCA0D /* PurchasedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		4053082D1C581EC800BFCA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405308301C581EC800BFCA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405308321C581EC800BFCA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405308381C5824C400BFCA0D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4053083B1C5826E900BFCA0D /* PurchasedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedViewController.h; sourceTree = "<group>"; };
+		4053083C1C5826E900BFCA0D /* PurchasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405308391C5824C400BFCA0D /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 		405308121C581EC800BFCA0D = {
 			isa = PBXGroup;
 			children = (
+				405308381C5824C400BFCA0D /* StoreKit.framework */,
 				4053081D1C581EC800BFCA0D /* IAPExample */,
 				4053081C1C581EC800BFCA0D /* Products */,
 			);
@@ -60,6 +67,8 @@
 		4053081D1C581EC800BFCA0D /* IAPExample */ = {
 			isa = PBXGroup;
 			children = (
+				4053083B1C5826E900BFCA0D /* PurchasedViewController.h */,
+				4053083C1C5826E900BFCA0D /* PurchasedViewController.m */,
 				405308211C581EC800BFCA0D /* AppDelegate.h */,
 				405308221C581EC800BFCA0D /* AppDelegate.m */,
 				405308241C581EC800BFCA0D /* ViewController.h */,
@@ -156,6 +165,7 @@
 				4053082C1C581EC800BFCA0D /* IAPExample.xcdatamodeld in Sources */,
 				405308231C581EC800BFCA0D /* AppDelegate.m in Sources */,
 				405308201C581EC800BFCA0D /* main.m in Sources */,
+				4053083D1C5826E900BFCA0D /* PurchasedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = IAPExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.yacarini.tests.IAPExample;
@@ -276,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = IAPExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.yacarini.tests.IAPExample;
