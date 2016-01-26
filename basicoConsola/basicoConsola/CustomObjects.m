@@ -10,6 +10,8 @@
 #import <Foundation/Foundation.h>
 #import "Animal.h"
 #import "Koala.h"
+#import "Animal+Exam.h"
+#import "Perritu.h"
 
 int main(int argc, const char * argv[]){
     @autoreleasepool {
@@ -33,7 +35,49 @@ int main(int argc, const char * argv[]){
         NSLog(@"%@", [ursa hablame:@"Claudio"]);
         
         
+        NSLog(@"Recibiió %@ sus vacunas? : %hhd", ursa.nombre, [ursa revisionDelVet]);
+        [ursa vacunarse];
+        [ursa getInfo];
         
+        // Protocol
+        [ursa looksCute];
+        [ursa performTrick];
+        
+        // Función anónima
+        float (^getArea) (float largo, float ancho);
+        getArea = ^float (float largo, float ancho){
+            return largo*ancho;
+        };
+        NSLog(@"El área de 5 de largo por 30 de ancho es %.2f", getArea(5, 30));
+        
+        // enums
+        enum Valoracion {
+            poor = 1,
+            good = 3,
+            great = 5
+        };
+        enum Valoracion valoracionGotham = great;
+        NSLog(@"La votación para Gotham es :: %u", valoracionGotham);
+        
+        Perritu *hano = [[Perritu alloc] initConNombre:@"Dogi Guau!"];
+        NSArray *animals = [[NSArray alloc] initWithObjects:dog, ursa, hano, nil];
+        id object1 = [animals objectAtIndex:0];
+        id object2 = [animals objectAtIndex:1];
+        id object3 = [animals objectAtIndex:2];
+        [object1 hacerRuido];
+        [object2 hacerRuido];
+        [object3 hacerRuido];
     }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+

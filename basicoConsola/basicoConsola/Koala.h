@@ -8,13 +8,15 @@
 //  ---> COCOA CLASS --> SUB CLASS NSOBJECT
 
 #import "Animal.h"
+#import "BeautyContest.h"
 
-@interface Koala : Animal
+@interface Koala : Animal <BeautyContest>
 
 - (NSString *) hablame:(NSString *)mi_nombre;
 
 - (void) hacerTruco;
 - (void) hacerRuido;
 
+// No es necesario instanciar los metodos de beautyContest.h
 
 @end

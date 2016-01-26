@@ -24,5 +24,13 @@
     NSLog(@"%@ dijo 'GGWP'", self.nombre);
 }
 
+- (void)looksCute {
+    NSLog(@"%@ se ve super lindo :v", self.nombre);
+}
+
+- (void) performTrick {
+    NSLog(@"%@ hizo un truco de Protocolo :v", [self nombre]);
+}
+
 
 @end

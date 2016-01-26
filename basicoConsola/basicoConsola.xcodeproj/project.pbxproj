@@ -13,6 +13,8 @@
 		405307BF1C56E02E00BFCA0D /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307BE1C56E02E00BFCA0D /* Animal.m */; };
 		405307C41C57E93B00BFCA0D /* Koala.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307C31C57E93B00BFCA0D /* Koala.m */; };
 		405307C71C57EBD700BFCA0D /* Animal+Exam.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307C61C57EBD700BFCA0D /* Animal+Exam.m */; };
+		405307CD1C58065700BFCA0D /* Animal+Vet.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307CC1C58065700BFCA0D /* Animal+Vet.m */; };
+		405307D11C580DAC00BFCA0D /* Perritu.m in Sources */ = {isa = PBXBuildFile; fileRef = 405307D01C580DAC00BFCA0D /* Perritu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,11 @@
 		405307C31C57E93B00BFCA0D /* Koala.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Koala.m; sourceTree = "<group>"; };
 		405307C51C57EBD700BFCA0D /* Animal+Exam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Animal+Exam.h"; sourceTree = "<group>"; };
 		405307C61C57EBD700BFCA0D /* Animal+Exam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Animal+Exam.m"; sourceTree = "<group>"; };
+		405307CB1C58065700BFCA0D /* Animal+Vet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Animal+Vet.h"; sourceTree = "<group>"; };
+		405307CC1C58065700BFCA0D /* Animal+Vet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Animal+Vet.m"; sourceTree = "<group>"; };
+		405307CE1C5808E200BFCA0D /* BeautyContest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyContest.h; sourceTree = "<group>"; };
+		405307CF1C580DAC00BFCA0D /* Perritu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perritu.h; sourceTree = "<group>"; };
+		405307D01C580DAC00BFCA0D /* Perritu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perritu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,11 @@
 				405307C31C57E93B00BFCA0D /* Koala.m */,
 				405307C51C57EBD700BFCA0D /* Animal+Exam.h */,
 				405307C61C57EBD700BFCA0D /* Animal+Exam.m */,
+				405307CB1C58065700BFCA0D /* Animal+Vet.h */,
+				405307CC1C58065700BFCA0D /* Animal+Vet.m */,
+				405307CE1C5808E200BFCA0D /* BeautyContest.h */,
+				405307CF1C580DAC00BFCA0D /* Perritu.h */,
+				405307D01C580DAC00BFCA0D /* Perritu.m */,
 			);
 			path = basicoConsola;
 			sourceTree = "<group>";
@@ -142,9 +154,11 @@
 				405307AC1C56C5CE00BFCA0D /* Cadenas.m in Sources */,
 				405307BF1C56E02E00BFCA0D /* Animal.m in Sources */,
 				405307B61C56D97E00BFCA0D /* Arrays.m in Sources */,
+				405307CD1C58065700BFCA0D /* Animal+Vet.m in Sources */,
 				405307C41C57E93B00BFCA0D /* Koala.m in Sources */,
 				405307C71C57EBD700BFCA0D /* Animal+Exam.m in Sources */,
 				405307B81C56DDF700BFCA0D /* CustomObjects.m in Sources */,
+				405307D11C580DAC00BFCA0D /* Perritu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

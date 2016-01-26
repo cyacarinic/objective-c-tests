@@ -11,4 +11,12 @@
 
 @implementation Animal (Exam)
 
+- (BOOL) revisionDelVet {
+    return true;
+}
+
+- (void) vacunarse {
+    NSLog(@"%@ recibio sus vacunas.", [self nombre]);
+}
+
 @end

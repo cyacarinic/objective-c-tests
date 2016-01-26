@@ -29,4 +29,7 @@
 -(int)  getSum: (int) num1
   siguienteNum: (int) num2;
 
+// Método polimorfismo
+-(void) hacerRuido;
+
 @end

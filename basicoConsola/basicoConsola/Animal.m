@@ -8,6 +8,7 @@
 //  ---> COCOA CLASS --> SUB CLASS NSOBJECT
 
 #import "Animal.h"
+#import "Animal+Vet.h"
 
 //@implementation Animal: NSObject
 @implementation Animal
@@ -32,7 +33,7 @@
 
 
 - (void) getInfo {
-    NSLog(@"Random info");
+    [self obtenerResultadoExamen];
 }
 
 
@@ -48,6 +49,11 @@
 - (NSString *)hablame:(NSString *)mi_nombre {
     NSString *response = [NSString stringWithFormat:@"Hola %@", mi_nombre];
     return response; 
+}
+
+// Método polimorfismo
+-(void) hacerRuido {
+    NSLog(@"Grrrrrrr");
 }
 
 
