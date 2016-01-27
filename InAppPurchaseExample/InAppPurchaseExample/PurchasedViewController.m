@@ -72,6 +72,7 @@
         _productDescription.text = _product.localizedDescription;
     }else{
         _productTitle.text = @"Producto no hallado";
+        _productDescription.text = @"Lo sentimos, por el momento el producto seleccionado no se encuentra disponible. Por favor, inténtelo mas tarde.";
     }
     products = response.invalidProductIdentifiers;
     for (SKProduct *product in products) {
