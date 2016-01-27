@@ -18,6 +18,7 @@
 - (IBAction)purchaseItem:(id)sender;
 
 @property (strong, nonatomic) PurchasedViewController *purchaseController;
+
 -(void) Purchased;
 
 

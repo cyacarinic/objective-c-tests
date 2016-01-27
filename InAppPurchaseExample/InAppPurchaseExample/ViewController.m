@@ -31,4 +31,8 @@
     [_purchaseController getProductID:self];
 }
 
+- (void) Purchased {
+    Label.text = @"El item ha sido comprado!! =)";
+}
+
 @end

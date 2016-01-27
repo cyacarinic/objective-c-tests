@@ -7,8 +7,11 @@
 //
 
 #import "PurchasedViewController.h"
+#import "ViewController.h"
 
 @interface PurchasedViewController ()
+
+@property (strong, nonatomic) ViewController *homeViewController;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _buyButton.enabled = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,27 +28,92 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)GoBack:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (IBAction)BuyProduct:(id)sender {
+    SKPayment *payment = [SKPayment paymentWithProduct:_product];
+    [[SKPaymentQueue defaultQueue] addPayment:payment];
 }
 
 - (IBAction)Restore:(id)sender {
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+    [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
+}
+
+-(void) paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue {
+    [self UnlockPurchased];
 }
 
 
-- (void) getProductID:(UIViewController *)viewController {
+- (void) getProductID:(ViewController *)viewController{
     NSLog(@"estas en get product id");
+    _homeViewController = viewController;
+    if([SKPaymentQueue canMakePayments]){
+        SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithObject:self.productID]];
+        request.delegate = self;
+        [request start];
+    }else{
+        _productDescription.text = @"Por favor, active InAppPurchase en su configuración";
+    }
 }
+
+#pragma mark _
+#pragma SKProductsRequestDelegate
+
+-(void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
+    NSArray *products = response.products;
+    if(products.count != 0){
+        _product = products[0];
+        _buyButton.enabled = YES;
+        _productTitle.text = _product.localizedTitle;
+        _productDescription.text = _product.localizedDescription;
+    }else{
+        _productTitle.text = @"Producto no hallado";
+    }
+    products = response.invalidProductIdentifiers;
+    for (SKProduct *product in products) {
+        NSLog(@"El producto '%@' no fue encontrado", product);
+    }
+}
+
+-(void) paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions {
+    for (SKPaymentTransaction *transaction in transactions) {
+        switch (transaction.transactionState) {
+            case SKPaymentTransactionStatePurchased:
+                [self UnlockPurchased];
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                break;
+                
+            case SKPaymentTransactionStateFailed:
+                NSLog(@"Falló la transacción.");
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                break;
+                
+            default:
+                break;
+        }
+    }
+}
+
+-(void) UnlockPurchased {
+    _buyButton.enabled = NO;
+    [_buyButton setTitle:@"Comprado" forState:UIControlStateDisabled];
+    [_homeViewController Purchased];
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
