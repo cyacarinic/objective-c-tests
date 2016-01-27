@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x84-zS-wSw">
-                                <rect key="frame" x="20" y="79" width="335" height="30"/>
+                                <rect key="frame" x="20" y="78" width="275" height="30"/>
                                 <state key="normal" title="Comprar"/>
                                 <connections>
                                     <action selector="purchaseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ta2-nW-4VK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aún no realizas ninguna compra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYb-Rr-FsC">
-                                <rect key="frame" x="20" y="128" width="335" height="21"/>
+                                <rect key="frame" x="20" y="128" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>

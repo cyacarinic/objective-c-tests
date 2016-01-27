@@ -70,13 +70,19 @@
 
 -(void) productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
     NSArray *products = response.products;
-    if(products !=0){
+    if(products.count !=0){
         _product = products[0];
         _buyButton.enabled = YES;
         _productTitle.text = _product.localizedTitle;
         _productDescription.text = _product.localizedDescription;
     }else{
         _productTitle.text = @"Producto no hallado";
+        
+        _product = nil;
+        _buyButton.enabled = YES;
+        _productTitle.text = @"error de compra";
+        _productDescription.text = @"error de compra";
+
     }
     
     products = response.invalidProductIdentifiers;
