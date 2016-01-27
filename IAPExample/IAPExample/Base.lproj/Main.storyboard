@@ -92,6 +92,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="buyButton" destination="vcc-OJ-Ez6" id="sNz-xb-TAa"/>
+                        <outlet property="productDescription" destination="l9o-YT-1uu" id="ozx-yT-umc"/>
+                        <outlet property="productTitle" destination="qWJ-qV-iph" id="qo9-jj-YTX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5W-mX-SOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

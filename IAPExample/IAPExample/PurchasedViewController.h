@@ -24,4 +24,6 @@
 - (IBAction)buyProduct:(id)sender;
 - (IBAction)restore:(id)sender;
 
+- (void) getProductID: (UIViewController *)viewController;
+
 @end
