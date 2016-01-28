@@ -14,6 +14,7 @@
 
 @interface ViewController : UIViewController <ADBannerViewDelegate> {
     IBOutlet UILabel *Label;
+    IBOutlet ADBannerView *adBanner;
 }
 
 - (IBAction)purchaseItem:(id)sender;

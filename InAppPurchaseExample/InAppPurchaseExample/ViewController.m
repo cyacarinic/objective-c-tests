@@ -67,6 +67,7 @@
 
 - (void) Purchased {
     Label.text = @"El item ha sido comprado!! =)";
+    adBanner.hidden = TRUE;
     
     NSUserDefaults *saveApp = [NSUserDefaults standardUserDefaults];
     [saveApp setBool:TRUE forKey:k_save];

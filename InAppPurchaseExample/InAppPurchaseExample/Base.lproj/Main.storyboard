@@ -42,6 +42,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Label" destination="jEN-E0-UdC" id="prI-BD-rOg"/>
+                        <outlet property="adBanner" destination="so8-iI-FIi" id="fki-TS-NBq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
