@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <StoreKit/StoreKit.h>
 #import "PurchasedViewController.h"
+#import <iAd/iAd.h>
 
 
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController <ADBannerViewDelegate> {
     IBOutlet UILabel *Label;
 }
 

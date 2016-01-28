@@ -30,6 +30,12 @@
                                     <action selector="purchaseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jMJ-0j-dYQ"/>
                                 </connections>
                             </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="so8-iI-FIi">
+                                <rect key="frame" x="27" y="609" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fMM-A7-7Cm"/>
+                                </connections>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

@@ -17,6 +17,7 @@
 		405308EA1C59725900BFCA0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405308E91C59725900BFCA0D /* StoreKit.framework */; };
 		405308EE1C5972C100BFCA0D /* PurchasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405308EC1C5972C100BFCA0D /* PurchasedViewController.m */; };
 		405308EF1C5972C100BFCA0D /* PurchasedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 405308ED1C5972C100BFCA0D /* PurchasedViewController.xib */; };
+		407B49C51C5A6F2B00F3D733 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407B49C41C5A6F2B00F3D733 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		405308EB1C5972C100BFCA0D /* PurchasedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedViewController.h; sourceTree = "<group>"; };
 		405308EC1C5972C100BFCA0D /* PurchasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedViewController.m; sourceTree = "<group>"; };
 		405308ED1C5972C100BFCA0D /* PurchasedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchasedViewController.xib; sourceTree = "<group>"; };
+		407B49C41C5A6F2B00F3D733 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407B49C51C5A6F2B00F3D733 /* iAd.framework in Frameworks */,
 				405308EA1C59725900BFCA0D /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +55,7 @@
 		405308C31C59721B00BFCA0D = {
 			isa = PBXGroup;
 			children = (
+				407B49C41C5A6F2B00F3D733 /* iAd.framework */,
 				405308E91C59725900BFCA0D /* StoreKit.framework */,
 				405308CE1C59721B00BFCA0D /* InAppPurchaseExample */,
 				405308CD1C59721B00BFCA0D /* Products */,
@@ -323,6 +327,7 @@
 				405308E81C59721B00BFCA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
