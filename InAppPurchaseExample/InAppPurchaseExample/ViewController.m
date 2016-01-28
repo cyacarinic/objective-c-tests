@@ -32,10 +32,14 @@
 }
 
 - (void) bannerViewDidLoadAd:(ADBannerView *)banner{
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:1];
-    [banner setAlpha:1];
-    [UIView commitAnimations];
+    NSUserDefaults *saveApp = [NSUserDefaults standardUserDefaults];
+    bool saved = [saveApp boolForKey:k_save];
+    if(!saved){
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:1];
+        [banner setAlpha:1];
+        [UIView commitAnimations];
+    }
 }
 
 - (void) bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
